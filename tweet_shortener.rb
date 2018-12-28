@@ -18,7 +18,7 @@ end
 def word_substituter(string)
      tweet_array = string.split.collect do |word|
        if dictionary.keys.include?(word.downcase)
-         word = "go fuck yourself"
+         word = dictionary[word.downcase]
        else
          word
        end
